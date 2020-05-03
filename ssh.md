@@ -10,7 +10,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_myidentity
 ```
 
-### Add public SSH key to clipboard
+### Add public SSH key to the clipboard
 
 ```bash
 xclip -sel clip < ~/.ssh/id_myidentity.pub
@@ -60,8 +60,8 @@ Host custom-name
   IdentitiesOnly yes
     
 Host *
-	IdentitiesOnly yes
-	LogLevel INFO
+  IdentitiesOnly yes
+  LogLevel INFO
 
 # More options can be found at : https://www.ssh.com/ssh/config/
 ```
